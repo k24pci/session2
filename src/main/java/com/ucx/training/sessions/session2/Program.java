@@ -21,6 +21,9 @@ public class Program {
 //        immutable = new ImmutableClass("agron", "agron@email.com");
         System.out.println(immutable.getName() + immutable.getEmail());
         System.out.println(immutable2.getName() + immutable2.getEmail());
+
+        Error error = Error.ERR_100;
+        System.out.println(error.getCode() + " " + error.getDescription());
     }
 
     private void printValue(){

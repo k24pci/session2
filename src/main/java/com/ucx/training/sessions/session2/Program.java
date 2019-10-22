@@ -13,14 +13,14 @@ public class Program {
         System.out.println(b.getValue());
         System.out.println(a.display("null"));
 
-        C c1 = new C();
-        C c2 = new C();
-
-
-        System.out.println(c1.getName());
-        System.out.println(c2.getName());
         Program program = new Program();
         program.printValue();
+
+        final ImmutableClass immutable = new ImmutableClass("Agon", "agon@email.com");
+        ImmutableClass immutable2 = new ImmutableClass("Arta", "arta@email.com");
+//        immutable = new ImmutableClass("agron", "agron@email.com");
+        System.out.println(immutable.getName() + immutable.getEmail());
+        System.out.println(immutable2.getName() + immutable2.getEmail());
     }
 
     private void printValue(){

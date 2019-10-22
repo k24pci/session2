@@ -24,6 +24,9 @@ public class Program {
 
         Error error = Error.ERR_100;
         System.out.println(error.getCode() + " " + error.getDescription());
+        for (Error error1 : Error.values()){
+            System.out.println(error1.getCode() + " " + error1.getDescription());
+        }
     }
 
     private void printValue(){
